@@ -7,7 +7,7 @@ const data: ItemType[] = [
     imageUrl:
       'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/AnimatedCube/screenshot/screenshot.gif',
     aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/AnimatedCube/glTF/AnimatedCube.gltf',
+      'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AnimatedCube/glTF/AnimatedCube.gltf',
   },
   {
     name: 'Avocado',
@@ -15,16 +15,7 @@ const data: ItemType[] = [
     imageUrl:
       'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/screenshot/screenshot.jpg',
     aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Avocado/glTF/Avocado.gltf',
-  },
-  {
-    name: 'Dragon',
-    description:
-      'Dragon 3d model with attenuations that appears to be made from colored glass.',
-    imageUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/DragonAttenuation/screenshot/screenshot_large.png',
-    aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/DragonAttenuation/glTF/DragonAttenuation.gltf',
+      'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf',
   },
   {
     name: 'Damage helmet',
@@ -32,7 +23,7 @@ const data: ItemType[] = [
     imageUrl:
       'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/DamagedHelmet/screenshot/screenshot.png',
     aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf',
+      'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf',
   },
   {
     name: 'Lantern',
@@ -40,7 +31,7 @@ const data: ItemType[] = [
     imageUrl:
       'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Lantern/screenshot/screenshot.jpg',
     aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Lantern/glTF/Lantern.gltf',
+      'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Lantern/glTF/Lantern.gltf',
   },
   {
     name: 'Water bottle',
@@ -48,7 +39,7 @@ const data: ItemType[] = [
     imageUrl:
       'https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/WaterBottle/screenshot/screenshot.jpg',
     aRUrl:
-      'https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/WaterBottle/glTF/WaterBottle.gltf',
+      'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF/WaterBottle.gltf',
   },
 ];
 
