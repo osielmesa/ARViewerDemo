@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ARViewerDemo-ARViewerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ARViewerDemo-ARViewerDemoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DE119C5B2A4AE303000CEA40 /* ARViewerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE119C5A2A4AE303000CEA40 /* ARViewerModule.swift */; };
+		DE119C5D2A4AEF62000CEA40 /* ARViewerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DE119C5C2A4AEF62000CEA40 /* ARViewerModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-ARViewerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARViewerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ARViewerDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ARViewerDemo-ARViewerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARViewerDemo-ARViewerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ARViewerDemo-ARViewerDemoTests/Pods-ARViewerDemo-ARViewerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE119C592A4AE302000CEA40 /* ARViewerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARViewerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE119C5A2A4AE303000CEA40 /* ARViewerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewerModule.swift; sourceTree = "<group>"; };
+		DE119C5C2A4AEF62000CEA40 /* ARViewerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewerModule.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,12 +121,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DE119C5C2A4AEF62000CEA40 /* ARViewerModule.m */,
+				DE119C5A2A4AE303000CEA40 /* ARViewerModule.swift */,
 				13B07FAE1A68108700A75B9A /* ARViewerDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ARViewerDemoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				DE119C592A4AE302000CEA40 /* ARViewerDemo-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -207,7 +215,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -414,6 +422,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				DE119C5D2A4AEF62000CEA40 /* ARViewerModule.m in Sources */,
+				DE119C5B2A4AE303000CEA40 /* ARViewerModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ARViewerDemo-ARViewerDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ARViewerDemo-ARViewerDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ARViewerDemoTests/Info.plist;
@@ -486,6 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8CW24VECQ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ARViewerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ARViewerDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "ARViewerDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -513,6 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8CW24VECQ;
 				INFOPLIST_FILE = ARViewerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ARViewerDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "ARViewerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
